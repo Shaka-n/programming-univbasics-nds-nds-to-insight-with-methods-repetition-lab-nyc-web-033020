@@ -49,7 +49,7 @@ def total_gross(source)
   total = 0
   while index < source.size do
     key = list_of_directors(source)[index]
-    total += directors_totals(key)
+    total += directors_totals(source)[key]
     index =+ 1 
   end
   total
